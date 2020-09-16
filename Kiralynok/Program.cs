@@ -23,6 +23,7 @@ namespace Kiralynok
                 {
                     T[i, j] = UresCella;
                 }
+
             }
 
         }

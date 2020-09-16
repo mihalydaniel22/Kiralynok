@@ -6,31 +6,40 @@ using System.Threading.Tasks;
 
 namespace Kiralynok
 {
-    class Table
+    class Tabla
     {
-        char[,] T;
-        char UresCella;
-        int UresOszlopokSzama;
-        int UresSorokSzama;
-    }
-    class Program
-    {
-        static void Elhelyez()
+        private char[,] T = new char[8, 8];
+        private char UresCella;
+        private int UresOszlopokSzama;
+        private int UresSorokSzama;
+
+        public Tabla(char ch)
+        {
+            T = new char[8, 8];
+            UresCella = ch;
+            for (int i = 0; i < 8 ; i++)
+            {
+                for (int j = 0; j < 8 ; j++)
+                {
+                    T[i, j] = UresCella;
+                }
+            }
+
+        }
+
+        public void Elhelyez()
         {
 
         }
-        static void Fajlbair()
+        public void Fajlbair()
         {
 
         }
-        static void Megjelenit()
+        public void Megjelenit()
         {
 
         }
-        static Tabla(char)
-        {
 
-        }
         public int UresOszlop()
         {
             return 0;
@@ -39,14 +48,12 @@ namespace Kiralynok
         {
             return 0;
         }
+    }
+    class Program
+    {
+
         static void Main(string[] args)
         {
-            Elhelyez();
-            Fajlbair();
-            Megjelenit();
-            Tabla();
-            UresOszlop();
-            UresSor();
 
         }
     }

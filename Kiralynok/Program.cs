@@ -10,8 +10,8 @@ namespace Kiralynok
     {
         private char[,] T = new char[8, 8];
         private char UresCella;
-        private int UresOszlopokSzama;
-        private int UresSorokSzama;
+        private bool UresOszlopokSzama;
+        private bool UresSorokSzama;
 
         public Tabla(char ch)
         {
@@ -43,8 +43,8 @@ namespace Kiralynok
                     if (T[sor, oszlop] == '#')
                     {
                         T[sor, oszlop] = 'K';
+                        igaz = false;
                     }
-                    igaz = false;
                 }
             }
         }
@@ -64,13 +64,27 @@ namespace Kiralynok
             }
         }
 
-        public int UresOszlop()
+        public bool UresOszlop(int oszlop)
         {
-            return 0;
+            int db1 = 0;
+            for (int i = 0; i < 8 ; i++)
+            {
+                for (int j = 0; j < 8 ; j++)
+                {
+                    while (db1 < )
+                    {
+
+                    }
+                    if (db1 <= )
+                    {
+
+                    }
+                }
+            }
         }
-        public int UresSor()
+        public bool UresSor(int sor)
         {
-            return 0;
+            return true;
         }
     }
     class Program
